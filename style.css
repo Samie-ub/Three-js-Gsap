@@ -8,8 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
 }
 
 body {
@@ -23,15 +21,26 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  
 }
-
 
 a {
   text-decoration: none;
   color: inherit;
   font-weight: 400;
   font-size: 1.3rem;
+}
+ul {
+  display: flex;
+  gap: 1rem;
+}
+li {
+  list-style: none;
+  transition: 0.9s ease-in-out all;
+}
+
+li:hover {
+  color: #ffffffd0;
+  border-bottom: 1px solid #ffffffd0;
 }
 
 nav {
@@ -45,12 +54,8 @@ nav {
   align-items: center;
 }
 
-footer{
+footer {
   position: absolute;
+  bottom: 0;
+  padding: 1rem 2rem;
 }
-
-.content h1{
-  padding: 4rem 0;
-}
-
-    
