@@ -72,6 +72,9 @@ scene.add(directionalLightTwo);
 
 camera.position.z = 0.5;
 
+const tl = gsap.timeline({ defaults: { duration: .5 } });
+tl.fromTo("nav", { y: "-100%" }, { y: "0%" });
+
 window.addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
